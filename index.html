@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Booking Website</title>
+    <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- header section  navigation -->
+ <header>
+    <div id="menu-bar" class="fas fa-bars"></div>
+   <a href="#" class="logo"> <h3><span>J</span>et  & <span>R</span>est</h3><p>Flight and Hotel Reservations</p> </a>
+
+    <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="review.html">Search Hotel</a>
+        <a href="flight_review.html">Search Flight</a>
+        <a href="service.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+  <div class="icons">
+ <i class="fas fa-search" id="search-btn"></i>
+ <i class="fas fa-user" id="user-btn"></i>
+</div>
+
+<form action="" class="search-container">
+    <input type="search" id="search-bar" placeholder="search here...">
+    <label for="search-bar" class="fas fa-search"></label>
+</form>
+ 
+</header>
+<!--login form container-->
+
+<div class="login-form-container">
+    <i class="fas fa-times" id="form-close"></i>
+    <form action="">
+        <h3>Login</h3>
+        <input type="email" class="box" placeholder="Enter your email..">
+        <input type="password" class="box" placeholder="Enter you password..">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">Remember me</label>
+        <p>forgot password? <a href="#">Click here</a></p>
+        <p>Don't have an account? <a href="#">Register now</a></p>
+    </form>
+</div>
+
+<!--Home sections starts-->
+ <section class="home">
+    <div class="content">
+    <h3>Welcome to Jet & Rest : Where  Global Luxury Awaits Your Journey </h3>
+    <p>Discover new places with us, Your E-Booking Adventure Begins Here</p>
+    <a href="service.html" class="btn">Discover more</a>
+    </div>
+
+    <div class="vidoe-container">
+        <video src="Compressed_vid1.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+
+</section> 
+<!--home section ends-->
+
+  <!--section tag is used to define group of content in webpage. also 
+                                      also used to increase  the semantic strucuture of web documents  -->
+
+<script src="script.js"></script>
+</body>
+</html>

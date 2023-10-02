@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking Flight</title>
+    <link rel= "stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="flightbook.css">
+</head>
+<body>
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+       <a href="#" class="logo"> <h3><span>J</span>et  & <span>R</span>est</h3><p>Flight and Hotel Reservations</p> </a>
+    
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="review.html">Search Hotel</a>
+            <a href="flight_review.html">Search flight</a>
+            <a href="service.html">Services</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+           </div>
+           
+           <form action="" class="search-container">
+               <input type="search" id="search-bar" placeholder="search here...">
+               <label for="search-bar" class="fas fa-search"></label>
+           </form>
+    </header>
+    <div class="login-form-container">
+        <i class="fas fa-times" id="form-close"></i>
+    </div>
+   
+    <section class="book" id="book"> 
+        <h1 class="heading">
+            <span>b</span>
+            <span>o</span>
+            <span>o</span>
+            <span>k</span>
+            <span class="space"></span>
+            <span>n</span>
+            <span>o</span>
+            <span>w</span>
+        </h1>
+    <div class="row">
+        <div class="img">
+            <img src="https://www.flightapis.com/assets/images/home/banner-img.png" alt="">
+        </div>
+        <form action="">
+            <div class="hotel_booking_form">
+                <h3>Name</h3>
+                <input type="text" placeholder="Name of the passenger">
+            </div>
+            <div class="hotel_booking_form">
+                <h3>From</h3>
+                <input type="text" placeholder="Type departure city">
+            </div>
+            <div class="hotel_booking_form">
+                <h3>To</h3>
+                <input type="text" placeholder="Type Destination city">
+            </div>
+            <div class="hotel_booking_form">
+                <h3>Depart</h3>
+                <input type="date">
+            </div>
+            <div class="hotel_booking_form">
+                <h3>Return</h3>
+                <input type="date">
+            </div>
+            <div class="hotel_booking_form">
+                <h3>Class</h3>
+                <select id="flightClass" name="flightClass">
+                    <option value="firstClass">Business Class</option>
+                    <option value="secondClass">Premium Class</option>
+                    <option value="thirdClass">Economy Class</option>
+                </select><br>
+            </div>
+            <div class="hotel_booking_form">   
+                <h3>Adults</h3>
+                <select id="flightClass" name="flightClass">
+                    <option value="2">1</option>
+                    <option value="3">2</option>
+                    <option value="4">3</option>
+                    <option value="5">4</option>
+                    <option value="6">5</option>
+                    <option value="7">6</option>
+                    <option value="8">7</option>
+                    <option value="9">8</option>
+                    <option value="10">9</option>
+                  </select>
+                 
+            </div>
+            <div class="hotel_booking_form">
+              
+           <h3>Children</h3>
+            <select id="flightClass" name="flightClass">
+                <option value="1">0</option>
+                <option value="2">1</option>
+                <option value="3">2</option>
+                <option value="4">3</option>
+                <option value="5">4</option>
+                <option value="6">5</option>
+                <option value="7">6</option>
+                <option value="8">7</option>
+                <option value="9">8</option>
+                <option value="10">9</option>
+              </select>
+            
+            </div>
+            <input type="submit" class="btn"onclick="alert('You are successfully booked. Thank you for booking.')" value="book">
+        </form>
+     </div>
+     
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
